@@ -14,9 +14,7 @@
 2. [Experimental Design & Mathematical Formulations](#2-experimental-design--mathematical-formulations)
 3. [Implementation Code (`ThreadCounterLab.java`)](#3-implementation-code-threadcounterlabjava)
 4. [Terminal Screenshots](#4-terminal-screenshots)
-   - [4.1 Experiment A: Thread-Safe Terminal Execution](#41-experiment-a-thread-safe-terminal-execution)
-   - [4.2 Experiment B: Unsynchronized Terminal Execution (Race Conditions)](#42-experiment-b-unsynchronized-terminal-execution-race-conditions)
-   - [4.3 Full Batch Execution Across All Test Cases (TC1 – TC7)](#43-full-batch-execution-across-all-test-cases-tc1--tc7)
+
 5. [Compilation and Execution Guide](#5-compilation-and-execution-guide)
 6. [Test Cases & Program Execution Outputs](#6-test-cases--program-execution-outputs)
    - [6.1 Experiment A: Thread-Safe Counting (AtomicLong)](#61-experiment-a-thread-safe-counting-atomiclong)
@@ -225,68 +223,6 @@ public class ThreadCounterLab {
 ---
 
 ## 4. Terminal Screenshots
-
-*As mandated by the GitHub and Canvas submission guidelines, this section documents the actual, un-altered execution screenshots captured from the terminal.*
-
-### 4.1 Experiment A: Thread-Safe Terminal Execution
-
-The screenshot below displays compilation and execution of `ThreadCounterLab` in thread-safe mode (`AtomicLong`), showing $0$ absolute difference and $0.0000\%$ error across threads:
-
-![Terminal Screenshot - Thread-Safe Execution](screenshots/terminal_safe_run.png)
-
-```text
-PS C:\Users\AC\Desktop\Lab_Thread_Counter> javac ThreadCounterLab.java
-PS C:\Users\AC\Desktop\Lab_Thread_Counter> java ThreadCounterLab 10 50000 true
-================================================================
- Thread Counter Lab Execution Results (Problem # SEPM-001)
-================================================================
-Mode                     : Thread-Safe (AtomicLong)
-Number of Threads (T)    : 10
-Increments/Thread (N)    : 50,000
-Expected Count (E = T*N) : 500,000
-Static Counter (Cs)      : 500,000
-Non-Static Total (Cns)   : 500,000
-Absolute Difference (D)  : 0
-Percentage Difference (P): 0.0000%
-Execution Time           : 28 ms
-================================================================
-```
-
----
-
-### 4.2 Experiment B: Unsynchronized Terminal Execution (Race Conditions)
-
-The screenshot below captures the unsynchronized run with identical parameters (`10` threads, `50,000` increments, `false`), showing substantial lost increments due to concurrent write collisions:
-
-![Terminal Screenshot - Unsynchronized Execution](screenshots/terminal_unsync_run.png)
-
-```text
-PS C:\Users\AC\Desktop\Lab_Thread_Counter> java ThreadCounterLab 10 50000 false
-================================================================
- Thread Counter Lab Execution Results (Problem # SEPM-001)
-================================================================
-Mode                     : Unsynchronized (Raw static long)
-Number of Threads (T)    : 10
-Increments/Thread (N)    : 50,000
-Expected Count (E = T*N) : 500,000
-Static Counter (Cs)      : 233,878
-Non-Static Total (Cns)   : 500,000
-Absolute Difference (D)  : 266,122
-Percentage Difference (P): 53.2244%
-Execution Time           : 30 ms
-================================================================
-```
-
----
-
-### 4.3 Full Batch Execution Across All Test Cases (TC1 – TC7)
-
-The overview screenshot below validates batch execution across all seven test cases, recording the progression of thread contention:
-
-![Terminal Screenshot - Full Test Suite Run](screenshots/terminal_all_testcases.png)
-
-> **Image Attachment Instructions:**
-> Save your terminal screenshots inside the `Lab_Thread_Counter/screenshots/` directory using the filenames referenced above (`terminal_safe_run.png`, `terminal_unsync_run.png`, and `terminal_all_testcases.png`). They will automatically render in this markdown document and the exported Canvas PDF report.
 
 ---
 
