@@ -223,6 +223,25 @@ public class ThreadCounterLab {
 ---
 
 ## 4. Terminal Screenshots
+<img width="1512" height="556" alt="image" src="https://github.com/user-attachments/assets/c9ca3e82-4b19-46c0-a610-42e4371aad44" />
+
+<img width="1537" height="553" alt="image" src="https://github.com/user-attachments/assets/bccc0c60-33cc-4e18-8088-0f88ad02582e" />
+
+<img width="1563" height="561" alt="image" src="https://github.com/user-attachments/assets/909906dd-690a-4863-b962-3994d0b59c86" />
+
+<img width="1504" height="567" alt="image" src="https://github.com/user-attachments/assets/271abd90-c771-419b-b802-bfd8ac0b0b39" />
+
+<img width="1632" height="568" alt="image" src="https://github.com/user-attachments/assets/28983285-f9cd-4363-8d80-63aee6e29098" />
+
+<img width="1456" height="547" alt="image" src="https://github.com/user-attachments/assets/f7104286-7a15-486c-9d63-b523bafd2291" />
+
+<img width="1480" height="559" alt="image" src="https://github.com/user-attachments/assets/4d3cfc73-f6fc-4f76-9eb7-ea58c4232fba" />
+
+
+
+
+
+
 
 ---
 
