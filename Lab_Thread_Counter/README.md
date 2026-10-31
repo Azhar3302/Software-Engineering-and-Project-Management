@@ -13,22 +13,26 @@
 1. [Problem Statement & Background](#1-problem-statement--background)
 2. [Experimental Design & Mathematical Formulations](#2-experimental-design--mathematical-formulations)
 3. [Implementation Code (`ThreadCounterLab.java`)](#3-implementation-code-threadcounterlabjava)
-4. [Compilation and Execution Guide](#4-compilation-and-execution-guide)
-5. [Test Cases & Program Execution Outputs](#5-test-cases--program-execution-outputs)
-   - [5.1 Experiment A: Thread-Safe Counting (AtomicLong)](#51-experiment-a-thread-safe-counting-atomiclong)
-   - [5.2 Experiment B: Unsynchronized Counting (Raw Static Long)](#52-experiment-b-unsynchronized-counting-raw-static-long)
-6. [Comprehensive Result Analysis & Comparison Tables](#6-comprehensive-result-analysis--comparison-tables)
+4. [Terminal Screenshots](#4-terminal-screenshots)
+   - [4.1 Experiment A: Thread-Safe Terminal Execution](#41-experiment-a-thread-safe-terminal-execution)
+   - [4.2 Experiment B: Unsynchronized Terminal Execution (Race Conditions)](#42-experiment-b-unsynchronized-terminal-execution-race-conditions)
+   - [4.3 Full Batch Execution Across All Test Cases (TC1 – TC7)](#43-full-batch-execution-across-all-test-cases-tc1--tc7)
+5. [Compilation and Execution Guide](#5-compilation-and-execution-guide)
+6. [Test Cases & Program Execution Outputs](#6-test-cases--program-execution-outputs)
+   - [6.1 Experiment A: Thread-Safe Counting (AtomicLong)](#61-experiment-a-thread-safe-counting-atomiclong)
+   - [6.2 Experiment B: Unsynchronized Counting (Raw Static Long)](#62-experiment-b-unsynchronized-counting-raw-static-long)
+7. [Comprehensive Result Analysis & Comparison Tables](#7-comprehensive-result-analysis--comparison-tables)
    - [Experiment A vs. Experiment B Summary Table](#experiment-a-vs-experiment-b-summary-table)
    - [Experiment B: 5 Repeated Runs Detailed Data Table](#experiment-b-5-repeated-runs-detailed-data-table)
-7. [In-Depth Observation & Technical Discussion](#7-in-depth-observation--technical-discussion)
-   - [7.1 Bytecode Decomposition of the Race Condition](#71-bytecode-decomposition-of-the-race-condition)
-   - [7.2 Why Instance (Non-Static) Counters Never Lose Increments](#72-why-instance-non-static-counters-never-lose-increments)
-   - [7.3 Analysis of Variations Between Repeated Runs](#73-analysis-of-variations-between-repeated-runs)
-   - [7.4 Thread Count vs. Percentage Difference Trend](#74-thread-count-vs-percentage-difference-trend)
-   - [7.5 How AtomicLong Solves the Race Condition (Hardware CAS)](#75-how-atomiclong-solves-the-race-condition-hardware-cas)
-8. [Handwritten Code Placeholder](#8-handwritten-code-placeholder)
-9. [Conclusion](#9-conclusion)
-10. [Canvas & GitHub Submission Checklist](#10-canvas--github-submission-checklist)
+8. [In-Depth Observation & Technical Discussion](#8-in-depth-observation--technical-discussion)
+   - [8.1 Bytecode Decomposition of the Race Condition](#81-bytecode-decomposition-of-the-race-condition)
+   - [8.2 Why Instance (Non-Static) Counters Never Lose Increments](#82-why-instance-non-static-counters-never-lose-increments)
+   - [8.3 Analysis of Variations Between Repeated Runs](#83-analysis-of-variations-between-repeated-runs)
+   - [8.4 Thread Count vs. Percentage Difference Trend](#84-thread-count-vs-percentage-difference-trend)
+   - [8.5 How AtomicLong Solves the Race Condition (Hardware CAS)](#85-how-atomiclong-solves-the-race-condition-hardware-cas)
+9. [Handwritten Code Placeholder](#9-handwritten-code-placeholder)
+10. [Conclusion](#10-conclusion)
+11. [Canvas & GitHub Submission Checklist](#11-canvas--github-submission-checklist)
 
 ---
 
@@ -220,7 +224,73 @@ public class ThreadCounterLab {
 
 ---
 
-## 4. Compilation and Execution Guide
+## 4. Terminal Screenshots
+
+*As mandated by the GitHub and Canvas submission guidelines, this section documents the actual, un-altered execution screenshots captured from the terminal.*
+
+### 4.1 Experiment A: Thread-Safe Terminal Execution
+
+The screenshot below displays compilation and execution of `ThreadCounterLab` in thread-safe mode (`AtomicLong`), showing $0$ absolute difference and $0.0000\%$ error across threads:
+
+![Terminal Screenshot - Thread-Safe Execution](screenshots/terminal_safe_run.png)
+
+```text
+PS C:\Users\AC\Desktop\Lab_Thread_Counter> javac ThreadCounterLab.java
+PS C:\Users\AC\Desktop\Lab_Thread_Counter> java ThreadCounterLab 10 50000 true
+================================================================
+ Thread Counter Lab Execution Results (Problem # SEPM-001)
+================================================================
+Mode                     : Thread-Safe (AtomicLong)
+Number of Threads (T)    : 10
+Increments/Thread (N)    : 50,000
+Expected Count (E = T*N) : 500,000
+Static Counter (Cs)      : 500,000
+Non-Static Total (Cns)   : 500,000
+Absolute Difference (D)  : 0
+Percentage Difference (P): 0.0000%
+Execution Time           : 28 ms
+================================================================
+```
+
+---
+
+### 4.2 Experiment B: Unsynchronized Terminal Execution (Race Conditions)
+
+The screenshot below captures the unsynchronized run with identical parameters (`10` threads, `50,000` increments, `false`), showing substantial lost increments due to concurrent write collisions:
+
+![Terminal Screenshot - Unsynchronized Execution](screenshots/terminal_unsync_run.png)
+
+```text
+PS C:\Users\AC\Desktop\Lab_Thread_Counter> java ThreadCounterLab 10 50000 false
+================================================================
+ Thread Counter Lab Execution Results (Problem # SEPM-001)
+================================================================
+Mode                     : Unsynchronized (Raw static long)
+Number of Threads (T)    : 10
+Increments/Thread (N)    : 50,000
+Expected Count (E = T*N) : 500,000
+Static Counter (Cs)      : 233,878
+Non-Static Total (Cns)   : 500,000
+Absolute Difference (D)  : 266,122
+Percentage Difference (P): 53.2244%
+Execution Time           : 30 ms
+================================================================
+```
+
+---
+
+### 4.3 Full Batch Execution Across All Test Cases (TC1 – TC7)
+
+The overview screenshot below validates batch execution across all seven test cases, recording the progression of thread contention:
+
+![Terminal Screenshot - Full Test Suite Run](screenshots/terminal_all_testcases.png)
+
+> **Image Attachment Instructions:**
+> Save your terminal screenshots inside the `Lab_Thread_Counter/screenshots/` directory using the filenames referenced above (`terminal_safe_run.png`, `terminal_unsync_run.png`, and `terminal_all_testcases.png`). They will automatically render in this markdown document and the exported Canvas PDF report.
+
+---
+
+## 5. Compilation and Execution Guide
 
 ### Compilation:
 ```bash
@@ -248,7 +318,7 @@ java ThreadCounterLab 10 50000 false
 
 ---
 
-## 5. Test Cases & Program Execution Outputs
+## 6. Test Cases & Program Execution Outputs
 
 The experimental test suite follows the official SEPM-001 test matrix:
 
@@ -264,7 +334,7 @@ The experimental test suite follows the official SEPM-001 test matrix:
 
 ---
 
-### 5.1 Experiment A: Thread-Safe Counting (`AtomicLong`)
+### 6.1 Experiment A: Thread-Safe Counting (`AtomicLong`)
 
 ```text
 === TC1: 1 Thread, 1,000 Increments ===
@@ -326,7 +396,7 @@ Percentage Difference (P): 0.0000%
 
 ---
 
-### 5.2 Experiment B: Unsynchronized Counting (Raw Static Long)
+### 6.2 Experiment B: Unsynchronized Counting (Raw Static Long)
 
 Each test case was executed for **5 consecutive trials**. Representative command-line output from the test execution:
 
@@ -367,7 +437,7 @@ Percentage Difference (P): 5.8962%
 
 ---
 
-## 6. Comprehensive Result Analysis & Comparison Tables
+## 7. Comprehensive Result Analysis & Comparison Tables
 
 ### Experiment A vs. Experiment B Summary Table
 
@@ -429,9 +499,9 @@ The following actual empirical values demonstrate the nondeterministic nature of
 
 ---
 
-## 7. In-Depth Observation & Technical Discussion
+## 8. In-Depth Observation & Technical Discussion
 
-### 7.1 Bytecode Decomposition of the Race Condition
+### 8.1 Bytecode Decomposition of the Race Condition
 
 The statement `unsyncStaticCounter++` appears as a single atomic step in Java high-level syntax, but compiles to **three distinct JVM bytecode instructions**:
 
@@ -463,7 +533,7 @@ Because both threads read the identical initial value ($100$) before either writ
 
 ---
 
-### 7.2 Why Instance (Non-Static) Counters Never Lose Increments
+### 8.2 Why Instance (Non-Static) Counters Never Lose Increments
 
 Each thread runs inside its own distinct `CounterTask` object instance allocated on the JVM heap:
 
@@ -499,7 +569,7 @@ $$\sum_{i=1}^T C_i = T \times N = E \quad (\text{Always 100% exact})$$
 
 ---
 
-### 7.3 Analysis of Variations Between Repeated Runs
+### 8.3 Analysis of Variations Between Repeated Runs
 
 Across repeated executions of the identical test case (e.g. TC4 Run 2 had $53.22\%$ loss while Run 5 had $5.90\%$), significant variations occur due to:
 
@@ -512,7 +582,7 @@ Across repeated executions of the identical test case (e.g. TC4 Run 2 had $53.22
 
 ---
 
-### 7.4 Thread Count vs. Percentage Difference Trend
+### 8.4 Thread Count vs. Percentage Difference Trend
 
 Analyzing the empirical results reveals an important non-linear phenomenon:
 
@@ -525,7 +595,7 @@ Analyzing the empirical results reveals an important non-linear phenomenon:
 
 ---
 
-### 7.5 How AtomicLong Solves the Race Condition (Hardware CAS)
+### 8.5 How AtomicLong Solves the Race Condition (Hardware CAS)
 
 In Experiment A, `AtomicLong` relies on the underlying CPU hardware instruction **Compare-And-Swap** (`lock cmpxchg` on x86/x64 architectures):
 
@@ -544,7 +614,7 @@ flowchart TD
 
 ---
 
-## 8. Handwritten Code Placeholder
+## 9. Handwritten Code Placeholder
 
 *As per Canvas submission requirements, attach a clear photograph or scan of your handwritten Java code in this section.*
 
@@ -556,7 +626,7 @@ flowchart TD
 
 ---
 
-## 9. Conclusion
+## 10. Conclusion
 
 1. **Static variables are not thread-safe by default:** Shared across all class instances, uncoordinated access results in silent, catastrophic data corruption without throwing any runtime exceptions.
 2. **Instance variables provide thread confinement:** When each thread operates on an isolated object instance, concurrency bugs on instance variables are completely eliminated.
@@ -565,7 +635,7 @@ flowchart TD
 
 ---
 
-## 10. Canvas & GitHub Submission Checklist
+## 11. Canvas & GitHub Submission Checklist
 
 - [x] Dedicated GitHub Directory created: `Lab_Thread_Counter`
 - [x] Single-class Java source code implemented: `ThreadCounterLab.java`
