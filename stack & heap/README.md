@@ -24,7 +24,6 @@
    - [In-Depth Memory Mechanism Analysis](#36-in-depth-memory-mechanism-analysis)
 4. [Comparative Memory Analysis: Stack vs. Heap](#4-comparative-memory-analysis-stack-vs-heap)
 5. [Observations & Theoretical Conclusions](#5-observations--theoretical-conclusions)
-6. [Canvas & GitHub Submission Guidelines](#6-canvas--github-submission-guidelines)
 
 ---
 
@@ -350,17 +349,3 @@ flowchart TD
    - A method-local inner class like `Report` generates a distinct `.class` file (`Employee$1Report.class`) and instantiates an independent heap object (`hash: 1808253012`), confirming that classes declared inside methods still produce regular heap-managed objects.
 
 ---
-
-## 6. Canvas & GitHub Submission Guidelines
-
-When submitting this lab directory to GitHub and Canvas:
-1. Ensure the directory contains:
-   - `EmployeeMemoryDemo.java`
-   - `StudentMemoryDemo.java`
-   - `employee_memory_output.png`
-   - `student_memory_output.png`
-   - `README.md`
-2. Canvas Submission:
-   - **GitHub Repository URL:** `https://github.com/<your-username>/<repo-name>`
-   - **Lab Directory Path:** `Stack_Heap_Memory_Demo`
-   - **Submission Document:** Export this Markdown document or compiled PDF with the terminal output screenshots attached.
