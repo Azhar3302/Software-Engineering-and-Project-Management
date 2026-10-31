@@ -278,9 +278,8 @@ Local Variable (marks): 90
 
 ### 3.4 Terminal Screenshot
 
-![Student Memory Demo Terminal Output](student_memory_output.png)
+<img width="1110" height="261" alt="image" src="https://github.com/user-attachments/assets/b0403797-2512-4a16-b1ac-442e95b14828" />
 
----
 
 ### 3.5 JVM Memory Architecture Diagram
 
