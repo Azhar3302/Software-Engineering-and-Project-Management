@@ -143,10 +143,7 @@ show() -> Executes in its own method frame
 ```
 
 ### 2.4 Terminal Screenshot
-
-![Employee Memory Demo Terminal Output](employee_memory_output.png)
-
----
+<img width="1113" height="622" alt="image" src="https://github.com/user-attachments/assets/4b84ed86-cc4c-4435-93ae-ea3fb7494bdd" />
 
 ### 2.5 JVM Memory Architecture Diagram
 
