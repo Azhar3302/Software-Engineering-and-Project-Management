@@ -77,7 +77,7 @@ Let:
 
 ## 3. Implementation Code (`ThreadCounterLab.java`)
 
-> **Note on Class Naming:** As specified by course instructions, if your instructor requires your first name in the class name (e.g. `Firstname_Thread`), rename `ThreadCounterLab` to `Firstname_Thread` and save as `Firstname_Thread.java`. The code is fully self-contained as a single class.
+> 
 
 ```java
 import java.util.concurrent.atomic.AtomicLong;
