@@ -571,14 +571,8 @@ flowchart TD
 
 ## 9. Handwritten Code Placeholder
 
-*As per Canvas submission requirements, attach a clear photograph or scan of your handwritten Java code in this section.*
 
-> **Handwritten Scan Placement:**
->
-> `[Insert Scan / Photograph of Handwritten ThreadCounterLab.java Here]`
->
-> *(File path in repository: `Lab_Thread_Counter/handwritten_code.jpg`)*
-
+https://github.com/Azhar3302/Software-Engineering-and-Project-Management/blob/main/Lab_Thread_Counter/Thread.pdf
 ---
 
 ## 10. Conclusion
