@@ -2,7 +2,7 @@
 ### A Secure, Role-Based Platform for Multi-Property Listings, Dynamic Lease Management, Escrow Payments, and Automated Maintenance Dispatching
 
 > **Course Title:** Software Engineering and Project Management  
-> **Course Code:** ICT-3107 / CSE-4101  
+> **Course Code:** ICT-3107
 > **Project Type:** Comprehensive Capstone & Enterprise Application Architecture  
 > **Target Platform:** Web Application (Next.js 14+ Frontend, Java 21+ / Spring Boot 3 Backend, PostgreSQL 16+)
 
