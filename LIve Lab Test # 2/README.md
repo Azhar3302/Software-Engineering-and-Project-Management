@@ -50,19 +50,40 @@ Java 21+, Jakarta Servlet 6, JSP, Apache Tomcat 10.1, Maven, MySQL, JDBC.
 - `database`: SQL setup script
 
 ## Screenshots
-Home:
+#Home:
+
+
 <img width="608" height="227" alt="image" src="https://github.com/user-attachments/assets/cdf34c13-dd94-46ee-879c-47017d23c22e" />
 
-Game:
+#Game:
+
+
+
+
 <img width="629" height="436" alt="image" src="https://github.com/user-attachments/assets/b1f1c8ec-7771-4c3f-897e-afec0635de81" />
 
-Result:
+#Result:
+
+
+
+
 <img width="608" height="269" alt="image" src="https://github.com/user-attachments/assets/4a33d44a-5e3e-45cc-93d3-42ef3dfa87af" />
 
-Leaderboard:
+#Leaderboard:
+
+
+
+
+
+
 <img width="597" height="281" alt="image" src="https://github.com/user-attachments/assets/f43f5545-cd9a-4f46-86de-0cebfa084a9a" />
 
-Database:
+#Database:
+
+
+
+
+
 <img width="326" height="236" alt="image" src="https://github.com/user-attachments/assets/b89e18e8-6b6f-44d9-ab3e-761638441fbc" />
 
 
