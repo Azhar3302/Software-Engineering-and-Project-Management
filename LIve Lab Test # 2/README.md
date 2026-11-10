@@ -51,7 +51,7 @@ Java 21+, Jakarta Servlet 6, JSP, Apache Tomcat 10.1, Maven, MySQL, JDBC.
 
 ## Screenshots
 Home:
-<img width="850" height="412" alt="image" src="https://github.com/user-attachments/assets/55317ea6-0c46-499a-9b84-c1ee40406edd" />
+<img width="608" height="227" alt="image" src="https://github.com/user-attachments/assets/cdf34c13-dd94-46ee-879c-47017d23c22e" />
 
 Game:
 <img width="629" height="436" alt="image" src="https://github.com/user-attachments/assets/b1f1c8ec-7771-4c3f-897e-afec0635de81" />
