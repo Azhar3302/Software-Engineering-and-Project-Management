@@ -1,4 +1,4 @@
-# YOUR NAME – MATH WHIZ
+# Azhar MATH WHIZ
 
 A beginner-friendly Java Servlet/JSP mathematical game using Apache Tomcat, JDBC and MySQL.
 
@@ -50,11 +50,22 @@ Java 21+, Jakarta Servlet 6, JSP, Apache Tomcat 10.1, Maven, MySQL, JDBC.
 - `database`: SQL setup script
 
 ## Screenshots
-Create a `screenshots` folder and add your own screenshots:
-- `home.png`
-- `game.png`
-- `result.png`
-- `leaderboard.png`
+Home:
+<img width="850" height="412" alt="image" src="https://github.com/user-attachments/assets/55317ea6-0c46-499a-9b84-c1ee40406edd" />
+
+Game:
+<img width="629" height="436" alt="image" src="https://github.com/user-attachments/assets/b1f1c8ec-7771-4c3f-897e-afec0635de81" />
+
+Result:
+<img width="608" height="269" alt="image" src="https://github.com/user-attachments/assets/4a33d44a-5e3e-45cc-93d3-42ef3dfa87af" />
+
+Leaderboard:
+<img width="597" height="281" alt="image" src="https://github.com/user-attachments/assets/f43f5545-cd9a-4f46-86de-0cebfa084a9a" />
+
+Database:
+<img width="326" height="236" alt="image" src="https://github.com/user-attachments/assets/b89e18e8-6b6f-44d9-ab3e-761638441fbc" />
+
+
 
 ## GitHub
 After creating your repository, update this section with your project subdirectory URL.
