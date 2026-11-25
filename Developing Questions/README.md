@@ -1,13 +1,3 @@
-Here is a **student-voiced, interactive `README.md`** ready to copy and paste directly into your GitHub repository. It is written from the perspective of a Software Engineering student who studied the **Software Design** lecture slides (Pages 1–155) and built an **OBE / BNQF Level 7 self-assessment guide** featuring:
-
-- Interactive **study checklists** (`- [ ]`) and a **Mermaid alignment diagram** (renders natively on GitHub).
-- **Dynamic, real-world student scenarios** (Campus Canteen App, Hostel Smart Thermostat, AI Study Assistant, Note-Taking App, Library Portal).
-- **Collapsible `<details>` walkthroughs** under every question showing **"How I Thought Through This (Student Approach)"** alongside the exam-ready solution.
-- Full **Q-to-CO Mapping**, **Bloom's Taxonomy (`Knowledge`, `Understanding`, `Higher Cognitive`)**, **Table of Specifications (40 Marks | 1 Hr)**, and a **Self-Scoring CO Attainment Tracker**.
-
-Copy everything inside the block below into your `README.md`:
-
-````markdown
 # 📐 Software Design — Student Study Notes & OBE Practice Assessment (BNQF Level 7)
 
 ![Framework](https://img.shields.io/badge/Framework-OBE%20%7C%20BNQF%20Level%207-blue)
@@ -369,6 +359,3 @@ After finishing the 60-minute test, log your marks below (target OBE mastery thr
 
 ### 📚 Slide References Followed
 - **Software Design Slides** (`www.cs.uoi.gr/~zarras/se.htm`) synthesizing material from Pfleeger, Sommerville, IEEE SWEBOK v3, R. C. Martin, Gang of Four (1995), Martin Fowler (EAA Patterns), Stevens/Myers/Constantine (1974), Parnas (1972), Chidamber & Kemerer, Clements et al. (2010), and Garlan & Shaw (1993).
-````
-
-If you want me to tailor the repo title, course code, university name, or add a live `README.md` file inside a specific folder for you, let me know!
