@@ -4,10 +4,6 @@
 ![Taxonomy](https://img.shields.io/badge/Bloom's%20Taxonomy-Knowledge%20%7C%20Understanding%20%7C%20Cognitive-purple)
 ![Exam](https://img.shields.io/badge/Self--Test-40%20Marks%20%7C%201%20Hour-brightgreen)
 ![Outcomes](https://img.shields.io/badge/SE%20Course%20Outcomes-5%20COs-orange)
-
-> **Why I made this `README.md`:**  
-> While studying the **Software Design** lecture slides (covering Design Fundamentals, CK Quality Metrics, Architectural Styles, GoF & Fowler's EAA Patterns, and UI Design), I wanted more than passive notes. So I mapped the entire 155-slide deck to **5 Software Engineering Course Outcomes (CO1–CO5)** under the **BNQF Level 7 (Bachelor's) OBE Standard**, built a timed **40-mark (1-hour) practice test**, and documented my own step-by-step student thought process inside expandable answers below.
-
 ---
 
 ## 🗺️ How Everything Connects (Slide Deck → COs → BNQF & Bloom's)
