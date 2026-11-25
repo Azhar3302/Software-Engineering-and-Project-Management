@@ -1,5 +1,15 @@
 # 📐 Software Design — Student Study Notes & OBE Practice Assessment (BNQF Level 7)
 
+| Field | Information |
+| :--- | :--- |
+| **Name** | Azharul Islam |
+| **Student ID** | IT-24031 |
+| **Course Title** | Software Engineering Project Management |
+| **Course Code** | ICT_3107 |
+| **Assessment Topic** | Software Design |
+| **Total Marks** | 40 |
+| **Duration** | 1 Hour |
+
 ![Framework](https://img.shields.io/badge/Framework-OBE%20%7C%20BNQF%20Level%207-blue)
 ![Taxonomy](https://img.shields.io/badge/Bloom's%20Taxonomy-Knowledge%20%7C%20Understanding%20%7C%20Cognitive-purple)
 ![Exam](https://img.shields.io/badge/Self--Test-40%20Marks%20%7C%201%20Hour-brightgreen)
