@@ -1,14 +1,4 @@
-Searched "BNQF" OBE Bloom taxonomy question paper CO mapping
-Searched "BNQF" "Cognitive" "Understanding" "Knowledge" OBE assessment marks
-Searched BNQF Bangladesh National Qualifications Framework OBE course outcomes Bloom taxonomy
-Searched "BNQF" "Level 7" "Knowledge" "Skills" "Bangladesh Accreditation Council"
-Searched "Cognitive" "Knowledge" "Understanding" Bloom taxonomy question paper OBE Bangladesh university
-Searched "Knowledge" "Understanding" "Cognitive" "40" marks question paper OBE Bangladesh
-Searched "Knowledge" "Understanding" "BNQF" "Bloom" domain
 
-Based on the attached **Software Design** lecture slides (Pages 1–155), below is a complete **OBE-based Assessment Package** aligned with **Revised Bloom's Taxonomy** and the **BNQF Level 7 (Bachelor's Degree) Standard** for a **Software Engineering (SE)** course.
-
----
 
 ## 1. Software Engineering (SE) Course Outcomes (`CO1`–`CO5`)
 
